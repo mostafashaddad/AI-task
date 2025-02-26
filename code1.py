@@ -1,13 +1,7 @@
 friends = ["Osama", "Ahmed", "Sayed", "Ali", "Mahmoud"]
 
-odd_names = []
-even_names = []
-
-for i, name in enumerate(friends):
-    if i % 2 == 0:
-        odd_names.append(f"{name}")
-    else:
-        even_names.append(f"{name}")
-
-print(odd_names)
-print(even_names)
+for i in range (0, len(friends),2):
+    print(friends[i], end = " ")
+print()
+for i in range (1, len(friends),2):
+    print(friends[i], end = " ")
