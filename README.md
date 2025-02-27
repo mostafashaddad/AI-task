@@ -1,138 +1,97 @@
-# Python Code Snippets
+<h1 align="center">
+  <br>
+  <a href="https://github.com/mostafashaddad/AI-task"><img src="https://raw.githubusercontent.com/mostafashaddad/AI-task/main/assets/logo.png" alt="AI-task" width="200"></a>
+  <br>
+  AI-task
+  <br>
+</h1>
+<h4 align="center">A collection of Python code snippets demonstrating various programming concepts and operations.</h4>
 
-This repository contains 15 Python code snippets for performing various operations on lists, strings, and numbers.
+<p align="center">
+  <a href="https://github.com/mostafashaddad/AI-task/issues">
+    <img src="https://img.shields.io/github/issues/mostafashaddad/AI-task.svg" alt="Issues">
+  </a>
+  <a href="https://github.com/mostafashaddad/AI-task/pulls">
+    <img src="https://img.shields.io/github/issues-pr/mostafashaddad/AI-task.svg" alt="Pull Requests">
+  </a>
+  <a href="https://github.com/mostafashaddad/AI-task/stargazers">
+    <img src="https://img.shields.io/github/stars/mostafashaddad/AI-task.svg" alt="Stars">
+  </a>
+  <a href="https://github.com/mostafashaddad/AI-task/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/mostafashaddad/AI-task.svg" alt="License">
+  </a>
+</p>
 
-## Table of Contents
-1. [Print Odd and Even Indexed Names](#print-odd-and-even-indexed-names)
-2. [Find Position of 'z' in "Elzero"](#find-position-of-z-in-elzero)
-3. [Print Specific Names from a List](#print-specific-names-from-a-list)
-4. [Update Last Two Names](#update-last-two-names)
-5. [Add Names to the Beginning and End](#add-names-to-the-beginning-and-end)
-6. [Remove First Two Names and Last Name](#remove-first-two-names-and-last-name)
-7. [Merge Multiple Lists](#merge-multiple-lists)
-8. [Sort List Ascending and Descending](#sort-list-ascending-and-descending)
-9. [Count Elements in the List](#count-elements-in-the-list)
-10. [Nested List with Frameworks](#nested-list-with-frameworks)
-11. [Remove Extra Symbols from a String](#remove-extra-symbols-from-a-string)
-12. [Format Numbers with Leading Zeros](#format-numbers-with-leading-zeros)
-13. [Pad Strings with '@' to Ensure 20 Characters](#pad-strings-with-to-ensure-20-characters)
-14. [Swap Case of Letters](#swap-case-of-letters)
-15. [Count Occurrences of "Love" in a String](#count-occurrences-of-love-in-a-string)
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#download">Download</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#license">License</a>
+</p>
 
----
+![screenshot](https://raw.githubusercontent.com/mostafashaddad/AI-task/main/assets/screenshot.png)
 
-## 1. Print Odd and Even Indexed Names
-```python
-friends = ["Osama", "Ahmed", "Sayed", "Ali", "Mahmoud"]
-print(friends[::2])  # "Osama", "Sayed", "Mahmoud"
-print(friends[1::2]) # "Ahmed", "Ali"
-```
+## Key Features
 
-## 2. Find Position of 'z' in "Elzero"
-```python
-name = "Elzero"
-print(name.index("z"))  # Output: 2
-```
+This repository includes the following Python code snippets:
 
-## 3. Print Specific Names from a List
-```python
-friends = ["Osama", "Ahmed", "Sayed", "Ali", "Mahmoud"]
-print(friends[1:4])  # "Ahmed", "Sayed", "Ali"
-print(friends[-2:])  # "Ali", "Mahmoud"
-```
+1. **Print Odd and Even Indexed Names**  
+   From a given list, print names at odd indices on the first line and even indices on the second line.
 
-## 4. Update Last Two Names
-```python
-friends[-2:] = ["science", "science"]
-print(friends)
-```
+2. **Find Position of 'z' in "Elzero"**  
+   Find the position (index) of the letter 'z' in the string "Elzero".
 
-## 5. Add Names to the Beginning and End
-```python
-friends.insert(0, "Nasser")
-print(friends)
-friends.append("Salem")
-print(friends)
-```
+3. **Print Specific Names from a List**  
+   Print the names at positions 2, 3, and 4 on the first line, and the last two names on the second line. The code works dynamically if the number of elements changes.
 
-## 6. Remove First Two Names and Last Name
-```python
-friends = friends[2:-1]
-print(friends)
-friends.pop()
-print(friends)
-```
+4. **Update Last Two Names**  
+   Update the last two names in the list to the name "science".
 
-## 7. Merge Multiple Lists
-```python
-merged_list = friends + employees + school
-print(merged_list)
-```
+5. **Add Names to the Beginning and End of a List**  
+   Add a name to the beginning and another name to the end of the list.
 
-## 8. Sort List Ascending and Descending
-```python
-print(sorted(friends))
-print(sorted(friends, reverse=True))
-```
+6. **Remove First Two Names and Last Name**  
+   Remove the first two names and the last name from the list.
 
-## 9. Count Elements in the List
-```python
-print(len(friends))
-```
+7. **Merge Multiple Lists**  
+   Merge three separate lists into one.
 
-## 10. Nested List with Frameworks
-```python
-technologies = ["Html", "CSS", "JS", "Python", ["Django", "Flask", "Web"]]
-print(technologies[4][0])  # Django
-print(technologies[4][-1]) # Web
-```
+8. **Sort the List Ascending and Descending**  
+   Sort the list in ascending and descending order.
 
-## 11. Remove Extra Symbols from a String
-```python
-name = "#@#@science#@#@"
-print(name.strip("#@"))  # science
-```
+9. **Count Elements in the List**  
+   Count the total number of elements in the list.
 
-## 12. Format Numbers with Leading Zeros
-```python
-for num in ["9", "15", "130", "950", "1500"]:
-    print(num.zfill(4))
-```
+10. **Access Nested List Elements**  
+    Access specific elements from a nested list.
 
-## 13. Pad Strings with '@' to Ensure 20 Characters
-```python
-print(name_one.rjust(20, "@"))
-print(name_two.rjust(20, "@"))
-```
+11. **Remove Extra Symbols from a String**  
+    Remove extra symbols (`#@`) from a string to extract the main content.
 
-## 14. Swap Case of Letters
-```python
-print(name_one.swapcase())
-print(name_two.swapcase())
-```
+12. **Format Numbers with Leading Zeros**  
+    Format numbers to ensure they have leading zeros up to 4 digits.
 
-## 15. Count Occurrences of "Love" in a String
-```python
-msg = "I Love Python And Although Love Elzero Web School"
-print(msg.count("Love"))  # Output: 2
-```
+13. **Pad Strings with '@' to Ensure 20 Characters**  
+    Pad strings with '@' characters to ensure they are exactly 20 characters long.
+
+14. **Swap Case of Letters**  
+    Swap the case of letters in a string (uppercase to lowercase and vice versa).
+
+15. **Count Occurrences of "Love" in a String**  
+    Count how many times the word "Love" appears in a given string.
 
 ---
 
-## How to Use
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-username/repository-name.git
-   ```
-2. Navigate to the directory:
-   ```sh
-   cd repository-name
-   ```
-3. Run any Python script to test the code snippets.
+## How To Use
 
-## Contributing
-Feel free to fork this repository and submit pull requests to improve the code.
+To clone and explore this repository, follow these steps:
 
-## License
-This project is licensed under the MIT License.
+```bash
+# Clone this repository
+$ git clone https://github.com/mostafashaddad/AI-task.git
 
+# Navigate to the project directory
+$ cd AI-task
+
+# Explore the code files
